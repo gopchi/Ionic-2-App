@@ -1,0 +1,81 @@
+
+page-home {
+
+@import url('http://allfont.net/allfont.css?fonts=lobster');
+
+ion-label {
+    white-space: normal;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+    ion-spinner *{
+    stroke: rgb(226, 106, 106);
+    fill: rgb(226, 106, 106);
+    }
+    .spinner-md-crescent svg {
+        display: block;
+        width: 77px;
+        height: 77px;
+        position:fixed;
+        top:50%;
+        left:50%;
+        margin-top:-38.5px;
+        margin-left:-38.5px;
+
+    }
+
+    .spinner-md-crescent circle {
+        stroke: rgb(226, 106, 106);
+    }
+
+
+    span.center {
+        width:100%;
+        text-align: center;
+        font-weight: bold;
+        color:#555;
+
+        p{
+            margin:0!important;
+            padding-top:10px;
+            font-family: 'Lobster', sans-serif;
+            font-weight: 100;
+            font-size:19px;
+            
+        }
+    }
+
+
+    ion-content {
+        background-image: url('../assets/img/foodEdited.png');
+        background-repeat: repeat;
+    }
+
+    .top_toolbar {
+        background: white;   
+    }
+
+    ion-list-header {
+        background-image: url('../assets/img/item_bg.png');
+        background-position: top;
+        background-repeat: repeat-x; 
+    }
+
+    ion-list-header {
+        text-align: center;
+
+        ion-badge {
+            font-family: 'Lobster', sans-serif;
+            font-weight: 100;
+            font-size:17px;
+            margin:15px 0 0;
+            padding:10px;
+            background-color: rgb(226, 106, 106) !important;
+        }
+    }
+  
+}

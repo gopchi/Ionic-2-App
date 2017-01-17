@@ -1,0 +1,140 @@
+<!--<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon> 
+    </button>
+    <ion-title  *ngIf='!loading'>
+      От {{ menu?.acf.date_monday }} до {{ menu?.acf.date_saturday }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+
+<ion-content padding >
+  
+  <ion-spinner *ngIf='loading'></ion-spinner>
+ 
+  
+  <ion-list *ngIf='!loading'>
+    <ion-list-header>
+      <h2>Понеделник - {{ menu?.acf.date_monday }}</h2>
+    </ion-list-header>
+     <ion-item> 
+        <h2> {{ menu?.acf.ponedelnik_qstie_1 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_1_pon }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.ponedelnik_qstie_2 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_2_pon }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.ponedelnik_qstie_3 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_3_pon }} </p> 
+    </ion-item>
+   
+
+    <ion-list-header>
+      <h2>Вторник - {{ menu?.acf.date_tuesday }}</h2>
+    </ion-list-header>
+
+      <ion-item> 
+        <h2> {{ menu?.acf.vtornik_qstie_1 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_1_vtornik }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.vtornik_qstie_2 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_2_vtornik }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.vtornik_qstie_3 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_3_vtornik }} </p> 
+    </ion-item>
+    
+   
+
+    <ion-list-header>
+      <h2>Сряда - {{ menu?.acf.date_wednesday }}</h2>
+    </ion-list-header>
+      <ion-item> 
+        <h2> {{ menu?.acf.srqda_qstie_1 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_1_srqda }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.srqda_qstie_2 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_2_srqda }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.srqda_qstie_3 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_3_srqda }} </p> 
+    </ion-item>
+
+    <ion-list-header>
+     <h2>Четвъртък - {{ menu?.acf.date_thursday }}</h2>
+    </ion-list-header>
+    <ion-item> 
+        <h2> {{ menu?.acf.chetvurtuk_qstie_1 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_1_chetvurtuk }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.chetvurtuk_qstie_2 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_2_chetvurtuk }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.chetvurtuk_qstie_3 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_3_chetvurtuk }} </p> 
+    </ion-item>
+
+    <ion-list-header>
+     <h2>Петък - {{ menu?.acf.date_friday }}</h2>
+    </ion-list-header>
+    <ion-item> 
+        <h2> {{ menu?.acf.petuk_qstie_1 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_1_petuk }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.petuk_qstie_2 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_2_petuk }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.petuk_qstie_3 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_3_petuk }} </p> 
+    </ion-item>
+
+    <ion-list-header>
+      <h2>Събота - {{ menu?.acf.date_saturday }}</h2>
+    </ion-list-header>
+    <ion-item> 
+        <h2> {{ menu?.acf.subota_qstie_1 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_1_subota }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.subota_qstie_2 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_2_subota }} </p> 
+    </ion-item>
+     <ion-item> 
+        <h2> {{ menu?.acf.subota_qstie_3 }} </h2>
+        
+        <p> {{ menu?.acf.sustavki_3_subota }} </p> 
+    </ion-item>
+
+
+</ion-list>
+  
+</ion-content>
